@@ -16,7 +16,7 @@ assert.equal(board.getHeight(), 8);
 
 for (var x = 0; x < board.getWidth(); x++)
     for (var y = 0; y < board.getHeight(); y++)
-        assert.equal(board.getCell(x, y), null);
+        assert.equal(board.getContent(x, y), null);
 
 // create rectangular board
 
@@ -27,7 +27,7 @@ assert.equal(board.getHeight(), 8);
 
 for (var x = 0; x < board.getWidth(); x++)
     for (var y = 0; y < board.getHeight(); y++)
-        assert.equal(board.getCell(x, y), null);
+        assert.equal(board.getContent(x, y), null);
 
 // create rectangular board 2
 
@@ -38,4 +38,4 @@ assert.equal(board.getHeight(), 3);
 
 for (var x = 0; x < board.getWidth(); x++)
     for (var y = 0; y < board.getHeight(); y++)
-        assert.equal(board.getCell(x, y), null);
+        assert.equal(board.getContent(x, y), null);
