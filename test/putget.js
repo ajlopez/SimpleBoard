@@ -12,6 +12,6 @@ board.putCell(1, 1, cell);
 
 assert.equal(board.getCell(0, 0), cell);
 assert.equal(board.getCell(1, 1), cell);
-assert.equal(board.getCell(0, 1), null);
-assert.equal(board.getCell(1, 0), null);
+assert.ok(board.getCell(0, 1) === null);
+assert.ok(board.getCell(1, 0) === null);
 
