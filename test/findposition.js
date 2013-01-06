@@ -10,6 +10,8 @@ var position = board.findPosition(function(content) { return content.color === 1
 
 assert.equal(position, null);
 
+// Find position by color
+
 var content1 = { color: 1 };
 var content2 = { color: 2 };
 
