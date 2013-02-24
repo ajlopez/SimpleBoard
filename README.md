@@ -85,6 +85,11 @@ TBD
 
 - 0.0.1: Published
 
+## Used In
+
+- [SimpleChess](https://github.com/ajlopez/SimpleChess)
+- [SimpleGo](https://github.com/ajlopez/SimpleGo)
+
 ## Contribution
 
 Feel free to [file issues](https://github.com/ajlopez/SimpleBoard) and submit
