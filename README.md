@@ -37,6 +37,10 @@ TBD
 
 - Samples
 
+## Versions
+
+- 0.0.1: Under development
+
 ## Contribution
 
 Feel free to [file issues](https://github.com/ajlopez/SimpleBoard) and submit
