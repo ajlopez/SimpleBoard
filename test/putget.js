@@ -8,12 +8,12 @@ const simpleboard = require('../');
     const board = simpleboard.createBoard();
     const cell = { color: 1 };
 
-    board.putContent(0, 0, cell);
-    board.putContent(1, 1, cell);
+    board.put(0, 0, cell);
+    board.put(1, 1, cell);
 
-    assert.equal(board.getContent(0, 0), cell);
-    assert.equal(board.getContent(1, 1), cell);
-    assert.ok(board.getContent(0, 1) === null);
-    assert.ok(board.getContent(1, 0) === null);
+    assert.equal(board.get(0, 0), cell);
+    assert.equal(board.get(1, 1), cell);
+    assert.ok(board.get(0, 1) === null);
+    assert.ok(board.get(1, 0) === null);
 }
 

@@ -13,7 +13,7 @@ const assert = require('assert');
 
     for (let x = 0; x < board.getWidth(); x++)
         for (let y = 0; y < board.getHeight(); y++)
-            assert.equal(board.getContent(x, y), null);
+            assert.equal(board.get(x, y), null);
 }
 
 // create rectangular board
@@ -28,7 +28,7 @@ const assert = require('assert');
 
     for (let x = 0; x < board.getWidth(); x++)
         for (let y = 0; y < board.getHeight(); y++)
-            assert.equal(board.getContent(x, y), null);
+            assert.equal(board.get(x, y), null);
 }
 
 // create rectangular board 2
@@ -43,7 +43,7 @@ const assert = require('assert');
 
     for (let x = 0; x < board.getWidth(); x++)
         for (let y = 0; y < board.getHeight(); y++)
-            assert.equal(board.getContent(x, y), null);
+            assert.equal(board.get(x, y), null);
 }
 
 // clone with content
@@ -53,8 +53,8 @@ const assert = require('assert');
     const content1 = { color: 1 };
     const content2 = { color: 2 };
 
-    original.putContent(0, 0, content1);
-    original.putContent(1, 1, content2);
+    original.put(0, 0, content1);
+    original.put(1, 1, content2);
 
     const board = original.clone();
 
@@ -78,14 +78,14 @@ const assert = require('assert');
     const content1 = { color: 1 };
     const content2 = { color: 2 };
 
-    original.putContent(0, 0, content1);
-    original.putContent(1, 1, content2);
+    original.put(0, 0, content1);
+    original.put(1, 1, content2);
 
     const board = original.clone();
 
     const content3 = { color: 3 };
 
-    original.putContent(2, 2, content3);
+    original.put(2, 2, content3);
 
     assert.equal(board.getPositions().length, 2);
     assert.equal(original.getPositions().length, 3);

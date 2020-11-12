@@ -17,8 +17,8 @@ const assert = require('assert');
     const content1 = { color: 1 };
     const content2 = { color: 2 };
 
-    board.putContent(0, 0, content1);
-    board.putContent(1, 1, content2);
+    board.put(0, 0, content1);
+    board.put(1, 1, content2);
 
     const position = board.findPosition(function(content) { return content.color === 1; });
 
